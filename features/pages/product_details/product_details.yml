@@ -1,0 +1,20 @@
+product_details.is_pdp:
+  description: "Verifica que está na PDP"
+  android:
+    finder: id
+    default: 'scrollViewProductDetail'
+  ios:
+    finder: xpath
+    default: '//XCUIElementTypeNavigationBar[@name="Detalhes do produto"]'
+
+product_details.buy_button:
+  description: "Clica no botão de comprar na PDP"
+  android:
+    finder: id
+    default: 'button'
+  ios:
+    finder: xpath
+    default: '(//XCUIElementTypeButton[@name="Comprar"])'
+
+
+

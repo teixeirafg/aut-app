@@ -1,0 +1,23 @@
+my_orders.is_my_orders:
+  description: "Verifica que é a página dos meus pedidos"
+  android:
+    finder: id
+    default: 'requestsLayout'
+
+my_orders.search_orders_magnifier:
+  description: "Encontra a lupa para procurar pedidos"
+  android:
+    finder: id
+    default: 'menuSearch'
+
+my_orders.search_orders_edit_text:
+  description: "Encontra o campo de texto para procurar os pedidos"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldOrderNumber'
+
+my_orders.search_orders_button_search:
+  description: "Encontra o botão de busca"
+  android:
+    finder: id
+    default: 'buttonSearch'

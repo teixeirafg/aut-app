@@ -1,0 +1,188 @@
+payment.is_payment:
+  description: "Verifica que é a página de pagamento"
+  android:
+    finder: id
+    default: 'fragmentResumeCheckout'
+  ios:
+    finder: a_id
+    default: 'PontoFrio.CheckoutView'
+    casasbahia: 'CasasBahia.CheckoutView'
+
+payment.text_reference:
+  description: "Verifica que é a página de pagamento"
+  ios:
+    finder: a_id
+    default: 'Pagamento'
+
+payment.done_button_ios:
+  description: "Clica no ok do teclado"
+  ios:
+   finder: a_id
+   default: 'Toolbar Done Button'
+
+
+payment.choose_payment_type:
+  description: "Seleciona a forma de pagamento"
+  android:
+    finder: id
+    default: 'textViewPaymentMethod'
+
+
+payment.is_boleto:
+  description: "Verifica que o pagamento com boleto foi escolhido"
+  android:
+    finder: id
+    default: 'textViewBilletDescription'
+
+payment.one_credit_card_number:
+  description: "Preenche o número do cartão"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldCardNumber'
+  ios:
+    finder: a_id
+    default: 'first_card_number_text_field'
+
+payment.one_credit_card_name:
+  description: "Preenche o nome do usuário do cartão"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldCardHolderName'
+  ios:
+    finder: a_id
+    default: 'first_card_holder_text_field'
+
+payment.one_credit_card_expiration_date:
+  description: "Preenche a data de expiração do cartão"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldCardHolderExpiration'
+  ios:
+    finder: a_id
+    default: 'first_card_expiration_date_text_field'
+
+payment.one_credit_card_cvv:
+  description: "Preenche o CVV do cartão"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldCardCvv'
+  ios:
+    finder: a_id
+    default: 'first_card_cvv_text_field'
+
+payment.one_credit_card_installments_modal:
+  description: "Abre o modal de parcelas"
+  android:
+    finder: id
+    default: 'textViewCreditCardInstallments'
+  ios:
+    finder: a_id
+    default: '//XCUIElementTypeOther[@name="checkout_payment_view"]/XCUIElementTypeOther/XCUIElementTypeScrollView/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeButton'
+
+payment.one_credit_card_choose_random_installment:
+  description: "Seleciona parcela randomica"
+  android:
+    finder: id
+    default: 'checkedTextViewInstallmentOption'
+  ios:
+    finder: a_id
+    default: 'iconCheckBoxOff'
+
+payment.one_credit_card_ok_installments:
+  description: "Clica no botao ok da seleção de parcelas"
+  android:
+    finder: id
+    default: 'button1'
+  ios:
+    finder: a_id
+    default: 'Selecionar'
+
+payment.choose_payment_with_two_cards:
+  description: "Seleciona pagamento com dois cartões"
+  android:
+    finder: id
+    default: 'textViewAddSecondCard'
+  ios:
+    finder: a_id
+    default: 'add_card_button'
+
+payment.payment_with_two_cards_first_card_value:
+  description: "Preenche o valor do primeiro cartão"
+  android:
+    finder: id
+    default: 'editTextFirstCreditCardValue'
+  ios:
+    finder: a_id
+    default:
+
+payment.payment_with_two_cards_first_card_installment:
+  description: "Abre o modal de parcelas do primeiro cartão"
+  android:
+    finder: id
+    default: 'textViewFirstCreditCardInstallments'
+  ios:
+    finder: a_id
+    default:
+
+payment.payment_with_two_cards_second_card_installment:
+  description: "Abre o modal de parcelas do segundo cartão"
+  android:
+    finder: id
+    default: 'textViewSecondCreditCardInstallments'
+  ios:
+    finder: a_id
+    default:
+
+payment.second_credit_card_number:
+  description: "Preenche o número do cartão"
+  android:
+    finder: id
+    default: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ViewFlipper/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ViewFlipper/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/TextInputLayout[1]/android.widget.FrameLayout/android.widget.EditText'
+  ios:
+    finder: a_id
+    default:
+
+payment.second_credit_card_name:
+  description: "Preenche o nome do usuário do cartão"
+  android:
+    finder: id
+    default: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ViewFlipper/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ViewFlipper/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/TextInputLayout[2]/android.widget.FrameLayout/android.widget.EditText'
+  ios:
+    finder: a_id
+    default:
+
+payment.second_credit_card_expiration_date:
+  description: "Preenche a data de expiração do cartão"
+  android:
+    finder: id
+    default: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ViewFlipper/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ViewFlipper/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/TextInputLayout[3]/android.widget.FrameLayout/android.widget.EditText'
+  ios:
+    finder: a_id
+    default:
+
+payment.second_credit_card_cvv:
+  description: "Preenche o CVV do cartão"
+  android:
+    finder: id
+    default: '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ViewFlipper/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ViewFlipper/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/TextInputLayout[4]/android.widget.FrameLayout/android.widget.EditText'
+  ios:
+    finder: a_id
+    default:
+
+payment.total_price:
+  description: "Verifica o valor total da compra"
+  android:
+    finder: id
+    default: 'textViewTotalPrice'
+  ios:
+    finder: a_id
+    default:
+
+payment.finish_payment:
+  description: "Finaliza pedido"
+  android:
+    finder: id
+    default: 'buttonContinue'
+  ios:
+    finder: a_id
+    default: 'button_proceed'

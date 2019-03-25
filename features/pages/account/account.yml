@@ -1,0 +1,12 @@
+account.register_link:
+  description: "Clica no link de registro"
+  android:
+    finder: id
+    default: 'textViewRegister'
+
+account.username:
+  description: "Verifica o nome do usuário"
+  android:
+    finder: id
+    default: 'textViewUserName'
+

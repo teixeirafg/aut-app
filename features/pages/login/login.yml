@@ -1,0 +1,44 @@
+login.is_login:
+  description: "Verifica que está na tela de login"
+  android:
+    finder: id
+    default: 'loginLayout'
+  ios:
+    finder: a_id
+    default: 'login_view'
+
+login.email:
+  description: "Insere o email"
+  android:
+    finder: id
+    default: 'editTextEmail'
+  ios:
+    finder: xpath
+    default: '//XCUIElementTypeTextField[@name="textField_email"]'
+
+login.password:
+  description: "Insere a senha"
+  android:
+    finder: id
+    default: 'editTextPassword'
+  ios:
+    finder: xpath
+    default: '//XCUIElementTypeSecureTextField[@name="textField_password"]'
+
+login.login_button:
+  description: "Clica no botão de fazer login"
+  android:
+    finder: id
+    default: 'buttonLogin'
+  ios:
+    finder: a_id
+    default: 'button_sign_in'
+
+login.register:
+  description: "Clica no botão para se cadastrar"
+  android:
+    finder: id
+    default: 'buttonRegister'
+  ios:
+    finder: a_id
+    default: 'button_sign_up'

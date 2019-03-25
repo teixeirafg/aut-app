@@ -1,0 +1,35 @@
+  <%
+    html_file_path = 'reports/html'
+    json_file_path = 'reports/json'
+    FileUtils.mkdir_p(html_file_path) unless File.exist?(html_file_path)
+    FileUtils.mkdir_p(json_file_path) unless File.exist?(json_file_path)
+    date = Time.now.strftime('%Y%m%d_%Hh%Mmin%Ss')
+    %>
+
+  parallel: --format json --out _<%= ENV['TEST_ENV_NUMBER']%>.json
+
+  default: -p json -p chrome
+
+    # Reports
+  report: -p default -p html -p json
+  html: --format pretty -f html -o <%= html_file_path %>/html_report_<%= date %>.html
+  json: --format pretty -f json -o <%= json_file_path %>/json_report_<%= date %>.json
+
+    # Ambientes
+  prd: AMBIENTE=prd
+  hlg: AMBIENTE=hlg
+  stg: AMBIENTE=stg
+
+
+  IOS: IOS=true
+  Android: ANDROID=true
+
+  # Jenkins
+  remote: REMOTE=true
+
+    # Bandeiras
+  cb: BANDEIRA=casasbahia
+  pf: BANDEIRA=pontofrio
+  ex: BANDEIRA=extra
+  bt: BANDEIRA=barateiro
+

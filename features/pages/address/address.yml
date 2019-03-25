@@ -1,0 +1,86 @@
+address.is_address:
+  description: "Verifica que está na tela de endereços"
+  android:
+    finder: id
+    default: 'scrollViewAddressSelection'
+  ios:
+    finder: xpath
+    default: '(//XCUIElementTypeOther[@name="freightView"])[1]'
+
+address.buy:
+  description: "Clica em comprar na tela de endereço"
+  android:
+    finder: id
+    default: 'buttonContinue'
+  ios:
+    finder: a_id
+    default: 'button_proceed'
+
+address.shipping_type:
+  description: "Escolhe o tipo de entrega"
+  android:
+    finder: id
+    default: 'shippingType'
+  ios:
+    finder: a_id
+    default: '(//XCUIElementTypeOther[@name="freightView"])'
+
+
+address.shipping_normal_ios:
+  description: "seleciona o tipo de entrega normal"
+  ios:
+    finder: a_id
+    default: 'Normal'
+
+address.shipping_agendada_ios:
+  description: "seleciona o tipo de entrega agendada"
+  ios:
+    finder: a_id
+    default: 'Agendada'
+
+address.shipping_expressa_ios:
+  description: "seleciona o tipo de entrega expressa"
+  ios:
+    finder: a_id
+    default: 'Expressa'
+
+address.shipping_super_expressa_ios:
+  description: "seleciona o tipo de entrega super expressa"
+  ios:
+    finder: a_id
+    default: 'Super Expressa'
+
+
+address.open_schedule_date_list:
+  description: "Abre a lista de dias para entrega agendada"
+  android:
+    finder: id
+    default: 'spinnerDate'
+  ios:
+    finder: xpath
+    default: '//XCUIElementTypeCell[@name="checkout_address_identification_container"]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeTextField'
+
+
+address.open_schedule_date_option:
+  description: "Escolhe opção na lista de dias para entrega agendada"
+  android:
+    finder: id
+    default: 'text1'
+
+
+address.open_schedule_hour_list:
+  description: "Abre a lista de horários para entrega agendada"
+  android:
+    finder: id
+    default: 'spinnerTimeWindow'
+  ios:
+    finder: xpath
+    default: '//XCUIElementTypeCell[@name="checkout_address_identification_container"]/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeTextField'
+
+address.open_schedule_hour_option:
+  description: "Escolhe opção na lista de horarios para entrega agendada"
+  android:
+    finder: id
+    default: 'text1'
+
+

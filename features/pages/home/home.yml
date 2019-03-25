@@ -1,0 +1,63 @@
+home.is_home:
+  description: "Verifica que está na home"
+  android:
+    finder: id
+    default: 'homeLayout'
+  ios:
+    finder: a_id
+    default: 'PontoFrio.HomeView'
+    casasbahia: 'CasasBahia.HomeView'
+
+home.search_magnifier:
+ description: "Encontra a lupa de pesquisa"
+ android:
+   finder: id
+   default: 'menuSearch'
+ ios:
+   finder: a_id
+   default: 'search'
+
+home.search_bar:
+  description: "Encontra a barra de pesquisa"
+  android:
+    finder: id
+    default: 'editTextSearchProducts'
+  ios:
+    finder: a_id
+    default: 'PontoFrio.SearchView'
+    casasbahia: 'CasasBahia.SearchView'
+
+home.tabHome:
+  description: "Clica na aba de homepage"
+  android:
+    finder: id
+    default: 'tabHome'
+  ios:
+    finder: a_id
+    default: 'Início'
+
+home.accountHome:
+  description: "Clica na aba de conta"
+  android:
+    finder: id
+    default: 'tabAccount'
+  ios:
+    finder: a_id
+    default: 'Conta'
+
+home.acceptGeoAlert_ios:
+  description: "Aceita a localizacao"
+  ios:
+    finder: a_id
+    default: 'Always Allow'
+
+home.acceptNotifications_ios:
+  description: "Aceita as notificacoes"
+  ios:
+    finder: a_id
+    default: 'Allow'
+
+
+
+
+

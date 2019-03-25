@@ -1,0 +1,29 @@
+confirmation_payment.is_confirmation_payment:
+  description: "Verifica que é a página de confirmação de pagamento"
+  android:
+    finder: id
+    default: 'viewFlipperOrderSummary'
+  ios:
+    finder: a_id
+    default: 'Not Now'
+
+confirmation_payment.get_order_number:
+  description: "Recebe o número do pedido"
+  android:
+    finder: id
+    default: 'textViewNumberRequest'
+
+confirmation_payment.go_to_my_orders:
+  description: "Vai até a página de meus pedidos"
+  android:
+    finder: id
+    default: 'buttonGoToOrders'
+
+confirmation_payment.not_now:
+  description: "Fecha o modal de avaliação na app store"
+  ios:
+    finder: a_id
+    default: 'Not Now'
+
+
+

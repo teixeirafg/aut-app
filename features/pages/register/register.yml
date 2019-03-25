@@ -1,0 +1,105 @@
+register.legal_type:
+  description: "Encontra a lista para o tipo de usuário a ser criado"
+  android:
+    finder: id
+    default: 'validatableSpinnerFieldRegistrationLegalType'
+  ios:
+    finder: a_id
+    default: 'textField_register_type'
+
+register.legal_type_options:
+  description: "Encontra as opções do tipo de usuário"
+  android:
+    finder: id
+    default: 'text1'
+  ios:
+    finder: a_id
+    default: 'textField_register_type'
+
+register.full_name:
+  description: "Encontra o campo de nome completo"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldRegistrationFullName'
+
+register.genre:
+  description: "Encontra a lista de genero"
+  android:
+    finder: id
+    default: 'validatableSpinnerFieldRegistrationGender'
+
+register.genre_options:
+  description: "Encontra as opções de genero"
+  android:
+    finder: id
+    default: 'text1'
+
+
+register.cpf:
+  description: "Encontra o campo de cpf"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldRegistrationCpf'
+
+
+register.birthday:
+  description: "Encontra o campo de data de nascimento"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldRegistrationBirthday'
+
+register.close_android_date_picker_birthday:
+  description: "Fecha o date picker da data de nascimento"
+  android:
+    finder: id
+    default: 'button2'
+
+
+
+register.phone:
+  description: "Encontra o campo de registro de telefone"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldRegistrationPhone'
+
+register.email:
+  description: "Encontra o campo de email"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldRegistrationEmail'
+
+register.confirmation_email:
+  description: "Encontra o campo de confirmação de email"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldRegistrationEmailConfirmation'
+
+register.password:
+  description: "Encontra o campo de senha"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldRegistrationPassword'
+
+register.confirmation_password:
+  description: "Encontra o campo de confirmação de senha"
+  android:
+    finder: id
+    default: 'validatableEditTextFieldRegistrationPasswordConfirmation'
+
+register.finish_registration:
+  description: "Encontra o botão de finalizar o registro"
+  android:
+    finder: id
+    default: 'buttonRegister'
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+extended_warranty.is_extended_warranty:
+  description: "Verifica que é a tela de garantia estendida"
+  android:
+    finder: id
+    default: 'servicesContainer'
+
+extended_warranty.refuse:
+  description: "Não aceita a garantia estendida"
+  android:
+    finder: id
+    default: 'buttonServicesFloatingRefuse'
+
+extended_warranty.accept:
+  description: "Aceita a garantia estendida"
+  android:
+    finder: id
+    default: 'buttonServicesHire'
+
+
+extended_warranty.open_list:
+  description: "Abre a lista com as opções de garantia estendida"
+  android:
+    finder: id
+    default: 'spinnerServicesModel'
+
+extended_warranty.select_warranty:
+  description: "Seleciona uma garantia"
+  android:
+    finder: id
+    default: 'text1'
+
+
+
+extended_warranty.close:
+  description: "Fechar tela de garantia"
+  android:
+    finder: id
+    default: 'imageViewClose'

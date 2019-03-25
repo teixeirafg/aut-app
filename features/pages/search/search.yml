@@ -1,0 +1,8 @@
+search.products_found:
+  description: "Encontra os produtos resultantes da busca"
+  android:
+    finder: id
+    default: 'textViewProductName'
+  ios:
+    finder: class_name
+    default: 'XCUIElementTypeCell'

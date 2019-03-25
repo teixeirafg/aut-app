@@ -1,0 +1,44 @@
+cart.is_cart_with_product:
+  description: "Verifica que é o carrinho com produtos"
+  android:
+    finder: id
+    default: 'constraintLayoutItemCartProduct'
+  ios:
+    finder: a_id
+    default: 'products_value'
+
+cart.buy:
+  description: "Clica no botão de comprar do carrinho"
+  android:
+    finder: id
+    default: 'buttonContinue'
+  ios:
+    finder: a_id
+    default: 'button_proceed'
+
+cart.additional_services_box:
+  description: "Verifica os serviços adicionais"
+  android:
+    finder: id
+    default: 'informationActionableCard'
+  ios:
+    finder: a_id
+    default: 'cart_service_offer'
+
+cart.additional_services_description:
+  description: "Verifica a descrição dos serviços adicionais"
+  android:
+    finder: id
+    default: 'textViewCardTitleService'
+  ios:
+    finder: a_id
+    default: 'additional_service_not_included_label'
+
+cart.hire_additional_services:
+  description: "Contrata os serviços adicionais"
+  android:
+    finder: id
+    default: 'textViewCardActions'
+  ios:
+    finder: a_id
+    default: 'Adicionar'
